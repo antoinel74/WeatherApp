@@ -23,13 +23,9 @@ This is a weather app built with `Vanilla JS` and designed with `SCSS`.
 
 ## Preview
 
-<p align="center">
-
 <img src="./assets/img/mobileUI_sun.png" alt="mobileUI_sun" width="200"/><img src="./assets/img/mobileUI_rain.png" alt="mobileUI_sun" width="200"/>
 
 ![desktopUI_preview](/assets/img/desktopUI_clouds.png)
-
-</p>
 
 ## Contact
 
