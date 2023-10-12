@@ -1,0 +1,25 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  font-family: $mainFont;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.footer__logo-container {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  .footer__links {
+    svg {
+      fill: white;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: scale(120%);
+      }
+    }
+  }
+}
