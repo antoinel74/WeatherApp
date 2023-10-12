@@ -1,5 +1,6 @@
 import { setBackground } from "./setbackground";
 import { formatDate } from "./dateformatter";
+import { loadCity, saveCity } from "./localstorage";
 
 const inputBtn = document.getElementById("submitBtn");
 const inputCity = document.getElementById("inputCity");
@@ -84,10 +85,20 @@ let fetchData = async () => {
       forecasts.appendChild(spanDate);
       forecastToggle.appendChild(forecasts);
     }
+    saveCity(askedCity);
   } catch (error) {
     console.log("Sorry, an error has occured !", error);
   }
 };
+
+// Load last city
+const lastCity = loadCity();
+if (lastCity) {
+  inputCity.value = lastCity;
+  fetchData().catch((error) => {
+    console.error("Fail to access local storage !", error);
+  });
+}
 
 inputBtn.addEventListener("click", () => {
   fetchData();
