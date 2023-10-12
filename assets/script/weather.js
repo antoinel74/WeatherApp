@@ -1,9 +1,9 @@
 import { setBackground } from "./setbackground";
 import { formatDate } from "./dateformatter";
 
-const apiKey = process.env.API_KEY;
 const inputBtn = document.getElementById("submitBtn");
 const inputCity = document.getElementById("inputCity");
+const apiKey = import.meta.env.VITE_API_KEY;
 
 document.getElementById("app__city").textContent = "Choose a city to start !";
 inputCity.value = "";
@@ -12,10 +12,7 @@ let fetchData = async () => {
   try {
     let askedCity = inputCity.value;
     const response = await fetch(
-      "http://api.openweathermap.org/data/2.5/forecast?units=metric&q=" +
-        askedCity +
-        "&appid=" +
-        apiKey
+      `http://api.openweathermap.org/data/2.5/forecast?units=metric&q=${askedCity}&appid=${apiKey}`
     );
     if (!response.ok) {
       throw new Error("Network connection failed, try again ?!");
