@@ -1,4 +1,3 @@
-import { API_Key } from "../../APIkey";
 import { setBackground } from "./setbackground";
 import { formatDate } from "./dateformatter";
 
