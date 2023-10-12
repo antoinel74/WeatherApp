@@ -6,11 +6,11 @@ This is a weather app built with `Vanilla JS` and designed with `SCSS`.
 
 [Go to the app !](https://weather-app-five-orpin-51.vercel.app/)
 
-### Interesting features
+### Features
 
 - Dynamic color gradient based on the current weather
-- Designed `mobile first` /w `desktop UI`
-- Weather previsions for 5 days
+- Display the weather previsions for 5 days
+- Save the last submitted city in the local storage
 
 ### Built with
 
