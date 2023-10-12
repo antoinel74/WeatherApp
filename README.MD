@@ -23,9 +23,8 @@ This is a weather app built with `Vanilla JS` and designed with `SCSS`.
 
 ## Preview
 
-![mobileUI_preview](/assets/img/mobileUI_rain.png)
-
-![mobileUI_preview](/assets/img/mobileUI_sun.png)
+<img src="./assets/img/mobileUI_sun.png" alt="mobileUI_sun" width="200"/>
+<img src="./assets/img/mobileUI_rain.png" alt="mobileUI_sun" width="200"/>
 
 ![desktopUI_preview](/assets/img/desktopUI_clouds.png)
 
